@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+
+
+spring:
+  config:
+    import: application-server.yml
+
+# 日志配置
+logging:
+  level:
+    com.cogent: debug
+    org.springframework: warn
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss,GMT+8
